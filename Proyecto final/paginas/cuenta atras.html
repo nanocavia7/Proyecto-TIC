@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<script>
+			function CuentaAtras() {
+				var hoy = new Date();
+				var h= hoy.getHours();
+				var m= hoy.getMinutes();
+				var s= hoy.getSeconds();
+				var endClassHora= 14;
+				var endClassMin= 20;
+				var endClassSeg= 00;				
+				document.getElementById('Hora').innerHTML =14 - h;
+				document.getElementById('Min').innerHTML  =20  - m;
+				document.getElementById('Seg').innerHTML  =00  - s;				
+			}
+		</script>
+				
+	</head>
+	
+
+	<body>
+		<script>	
+			var hoy = new Date();
+			var h= hoy.getHours();
+			var m= hoy.getMinutes();
+			var s= hoy.getSeconds();
+			var endClassHora= 14;
+			var endClassMin= 20;
+			var endClassSeg= 00;
+			var HorasRest= endClassHora-h;
+			var MinRest= endClassMin-m;
+			var SegRest= endClassSeg-s;
+		</script>
+		<script>
+			alert(HorasRest+":" +MinRest+ ":" +SegRest);
+		</script>
+			
+	</body>
+</html>
